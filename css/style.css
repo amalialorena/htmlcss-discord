@@ -6,6 +6,9 @@
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.2);
 }
+body {
+    font-family: Whitney,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
 
  .clearfix::after{
     content: "";
@@ -20,21 +23,35 @@
     text-align: center;
 }
 
+button {
+    padding: 7px 10px;
+    border-radius: 15px 
+}
+
+p {
+    word-spacing: 5px;
+    line-height: 1.6;
+}
 /* Header */
 
 header {
-    /* debug */
-    background-color: #698ef0;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: white;; 
+}
+.logo img {
+    height: 30px;
 }
 
 .logo {
-    /* debug */
-    width: 80px;
-    height: 30px;
-    background-color: white;
     float:left;
 }
 
+a {
+    color:white;
+    text-decoration: none;
+    margin: 0 12px
+}
 nav {
     width: 70%;
     text-align: center;
@@ -44,6 +61,7 @@ nav {
 
 ul{
     display: inline-block;
+    line-height: 31px;
 }
 
 ul li{
@@ -51,11 +69,9 @@ ul li{
 }
 
 .sign-in {
-    /* debug */
-    width: 80px;
-    height: 30px;
     background-color: white;
     float:right;
+    
 }
 
 .jumbo{
@@ -64,11 +80,25 @@ ul li{
 }
 
 h1 {
-    margin-bottom: 50px;
+    font-size: 40px;
+    margin-bottom: 35px;
 }
 
 h1 ~ p {
     margin-bottom: 20px;
+}
+
+button.call-to-action {
+    font-size: 16px;
+    padding: 14px 17px;
+    border-radius: 27px;
+    margin-left: 23px;
+    color:rgb(99, 97, 97);
+}
+
+button.call-to-action.open {
+    background-color: black;
+    color:white;
 }
 
 /* Main content */
