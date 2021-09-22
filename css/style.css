@@ -148,6 +148,9 @@ main.container section{
 .last-section h3{
     font-size: 50px;
 }
+main section.last-section{
+    margin-bottom: 0;
+}
 
 .player img{
     width: 100%;
@@ -157,6 +160,7 @@ main.container section{
     color:white;
     background-color: cornflowerblue;
 }
+
 /* Footer */
 
 footer {
