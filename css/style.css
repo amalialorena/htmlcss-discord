@@ -75,12 +75,15 @@ header {
 .logo {
     float:left;
 }
+nav ul li a {
+    margin: 0 30px;
+}
 
 a {
     color:white;
     text-decoration: none;
-    margin: 0 30px;
 }
+
 nav {
     width: 100%;
     text-align: center;
@@ -88,12 +91,12 @@ nav {
     margin-bottom: 100px;
 }
 
-ul{
+nav ul{
     display: inline-block;
     line-height: 31px;
 }
 
-ul li{
+nav ul li{
     display: inline-block;
 }
 
@@ -164,9 +167,21 @@ main section.last-section{
 /* Footer */
 
 footer {
-    margin-top: 50px;
-    /* debug */
-    height: 300px;
+    color:white;
     background-color: black;
+}
+
+.social {
+    float:left;
+    width: 40%;
+}
+
+.links ul li {
+    display:block;
+}
+
+.links {
+    float:left;
+    width: 15%;
 }
 
