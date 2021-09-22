@@ -4,20 +4,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,.2);
 }
 body {
     font-family: Whitney,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
- .clearfix::after{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
 } 
 
 .container {
-    width: 80%;
+    width: 73%;
     margin: auto;
     padding: 30px 0 100px;
     text-align: center;
@@ -25,20 +24,50 @@ body {
 
 button {
     padding: 7px 10px;
-    border-radius: 15px 
+    border-radius: 15px;
+    border: 0;
+}
+
+button.call-to-action {
+    font-size: 23px;
+    padding: 14px 17px;
+    border-radius: 27px;
+    margin-left: 23px;
+    color:rgb(99, 97, 97);
+}
+
+button.call-to-action.open {
+    background-color: black;
+    color:white;
 }
 
 p {
+    font-size: 20px;
+    color:rgb(58, 57, 57);
     word-spacing: 5px;
     line-height: 1.6;
 }
+
+h3{
+    margin-bottom: 20px ;
+    font-size: 60px;
+}
+
+.text {
+    text-align: left;
+}
 /* Header */
+
+.jumbo p {
+    color: white;
+}
 
 header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     color: white;; 
 }
+
 .logo img {
     height: 30px;
 }
@@ -50,10 +79,10 @@ header {
 a {
     color:white;
     text-decoration: none;
-    margin: 0 12px
+    margin: 0 30px;
 }
 nav {
-    width: 70%;
+    width: 100%;
     text-align: center;
     display: inline-block;
     margin-bottom: 100px;
@@ -70,12 +99,11 @@ ul li{
 
 .sign-in {
     background-color: white;
-    float:right;
-    
+    float:right;   
 }
 
 .jumbo{
-    width: 600px;
+    width: 700px;
     margin: auto;
 }
 
@@ -88,41 +116,47 @@ h1 ~ p {
     margin-bottom: 20px;
 }
 
-button.call-to-action {
-    font-size: 16px;
-    padding: 14px 17px;
-    border-radius: 27px;
-    margin-left: 23px;
-    color:rgb(99, 97, 97);
-}
 
-button.call-to-action.open {
-    background-color: black;
-    color:white;
-}
+
+
 
 /* Main content */
 
-h3 {
-    margin-bottom: 20px;
+.illustration.left {
+    text-align: left;
+}
+.illustration.right {
+    text-align: right;
 }
 
 main.container section{
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     margin-top: 100px;
 }
 
 .illustration {
-    width: 60%;
+    width: 65%;
     float:left;
    
 }
 
 .text {
-    width: 40%;   
+    width: 35%;   
      float:left;
 }
 
+.last-section h3{
+    font-size: 50px;
+}
+
+.player img{
+    width: 100%;
+}
+
+.cta button.call-to-action {
+    color:white;
+    background-color: cornflowerblue;
+}
 /* Footer */
 
 footer {
